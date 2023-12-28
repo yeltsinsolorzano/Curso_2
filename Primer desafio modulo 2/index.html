@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <!-- AQUI SE INTRODUJO EL ICONO DEL SITIO WEB -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- TAL COMO OBSERVAMOS EN EL VIDEO, DENTRO DEL HEADER SOLO SE COLOCO EL TITULO Y EL ARRAFO CON EL ESCRITO. MIENTRAS QUE EL NAV QUE CORRESPONDE AL MENU SE COLOCO FUERA DEL HEADER, JUSTO DEBAJO DE ESTE. 
+    
+    DIFERENCIA: COLOQUE TODO LOS MENCIONADO ANTERIORMENTE DENTRO DEL HEADER-->
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <p>Todo aquello que usted siempre quiso saber sobre el mundo <br> Tech, en un solo lugar.</p>
+
+        <!-- EN EL TUTORIAL NO SE UTILIZARON ETIQUETAS DE LISTA DESORDENADA PARA REALIZAR EL MENU, SIMPLEMENTE SE COLOCO LA ETIQUEDA NAV Y LOS LINKS ADENTRO DE LA MISMA DIRECTAMENTE -->
+        <nav>
+            <ul>
+                <li class="menu">Menu</li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Noticias</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Curiosidades</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Hable con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- LA PRIMERA OBSERVACION QUE ESTAMOS VIENDO AQUI EN DENTRO DE LA ETIQUETA MAIN. 
+        
+        1. ES QUE DECLARO UN ARTICLE
+        
+        2. DENTRO DEL ARTICLE DECLARO UN ASIDE PARA CONTENER LA PARTE DE ABAJO DONDE ESTA LA CAJA DE INFORMACION "SABER MAS" -->
+    <main>
+        <section class="parte_superior_main">
+            <h2>Historia de la mascota de Android</h2>
+        <p>Probablemente usted sabe que el sistema operacional <a href="https://www.android.com/intl/es_es/" target="_blank" rel="noopener noreferrer">Android</a>, mantenido por <a href="https://about.google/intl/es-419/locations/" target="_blank" rel="noopener noreferrer">Google</a> es uno de los mas utilizados para dispositivos moviles en todo el mundo. Pero tal vez usted no sabe que su simpatica mascota tiene un nombre y una historia ,uy curiosa? Acompanenos en este articulo para que su equipo muchas cosas sobre ese pequeno robot.</p>
+        <h3>La primera version</h3>
+        <p>La primera iniciativa de crear una mascota surgio en 2007 y vino de un desarrollador llamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/" target="_blank" rel="noopener noreferrer" class="con_icono">Dan Morrill</a>. El cuenta que abrio el <a href="https://inkscape.org/es/" target="_blank" rel="noopener noreferrer" class="con_icono">Inkscape</a>  (software livre para vectorizacion de imagenes) y creo su propia version de robot. El objetivo era apenas personificar el sistema solo para su propio equipo, no existia ninguna solicitud de la empresa para la creacion de una mascota</p>
+        <img src="imagens/dan-droids.png" alt="Robots prototipos">
+        <p>Esa primera version bizarra hasta fue bautizada en homenagem a su creador: serian los <a href="https://linux.fandom.com/es/wiki/Dandroid" target="_blank" rel="noopener noreferrer">Dandroids</a>.</p>
+        <h3>Surge una nueva mascota</h3>
+        <p>la idea de tener una mascota fue madurando y la mision fue pasada para una profesional del area. La ilustradora rusa <a href="https://www.irinablok.com/" target="_blank" rel="noopener noreferrer" class="con_icono">Irina Block</a> , tambien trabajadora de google, quedo con la mision de representar al pequeno robot de un manera mas agradable.</p>
+        <img src="imagens/irina-blok.jpg" alt="Foto de Irina Block">
+        <p>La idea principal de Irina era representar todo graficamente con pocos trazos e de forma mas chapada. El diseno tambien deberia generar identificacion rapida con quien la mira. Surgio entonces el <a href="https://www.elespanol.com/elandroidelibre/noticias-y-novedades/20230906/google-renueva-bugdroid-representar-comunidad-android-anuncia-funciones-ia-pixel/792420762_0.html" target="_blank" rel="noopener noreferrer">Bugdroid</a>, la nueva mascota de android.</p>
+        <img src="imagens/bugdroid.png" alt="Imagen de goolge">
+        <p>La principal inspiracion para los trazos del nuevo Bugdroid vino de aquellos dibujitos que ilustran puertas de bano para indicar el genero de cada puerta. Cuenta la leyenda que lartista estaba creando en su mesa en la oficina de google e miro para el lado de los banos e la identificacion fue inmediata: simple, limpio, objetivo.</p>
+        </section>
+        <div class="parte_media_main">
+            <iframe class="video" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=BIpRc6xMPvKm2mwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <section class="parte_inferior_main">
+            <div class="contenedor_superior">
+                <p></p>Quieres aprender mas?</p>
+            </div>
+            <div class="contenedor_inferior">
+                <p class="parrafo_sin_margen">Otro asunto curioso en relacion a Android es que cada version siempre fue nombrada en homenage a un dulce, en orden alfabetica a partir de la version 1.5 hasta la 9.0.</p>
+                <div class="lista_uno">
+                    <!-- EN ESTE PUNTO RELACIONADO CON LA CREACION DE LA LISTA, ES IMPORTANTE DESTACAR:
+                        
+                        1. EN EL VIDEO EL PROFESOR REALIZO SOLO UNA LISTA DESORDENADONCON TODOS LOS ELEMENTOS LI.
+                    
+                        2. UTILIZO LA ETIQUETA <ABBR> PARA REALIZAR LA ABREVIACION DE CADA UNO DE LOS LI, DE FORMA QUE AL PASAR EL MOUSE SOBRE ESTOS APAREZCA EL SIGNIFICADO DE CADA UNO. ADEMAS LA UTILIZACION DE ESTA ETIQUETA GENERA UN SUBRAYADO DE FORMA PREDETERMINADA.-->
+                    <ul>
+                        <li>1.5 - <ins>Cupcake</ins></li>
+                        <li>1.6 - <ins>Donuf</ins></li>
+                        <li>3.0 - <ins>Eclair</ins></li>
+                        <li>2.2 - <ins>Froyo</ins></li>
+                        <li>2.3 - <ins>Gingerbread</ins></li>
+                        <li>3.0 - <ins>Honeycomb</ins></li>
+                        <li>4.0 - <ins>Joe Cream Sandwich</ins></li>
+                    </ul>
+                </div>
+                <div class="lista_dos">
+                    <ul>
+                        <li>4.1 - <ins>Jelly Bean</ins></li>
+                        <li>4.4 - <ins>Kitkat</ins></li>
+                        <li>5.0 - <ins>Lolipop</ins></li>
+                        <li>6.0 - <ins>Marshmallow</ins></li>
+                        <li>7.0 - <ins>Nougat</ins></li>
+                        <li>8.0 - <ins>Oreo</ins></li>
+                        <li>9.0 - <ins>Pie</ins></li>
+                    </ul>
+                </div>
+                <p class="clear">Desafortunadamente, el Android Q no existio, pues Google decidio poner fin a esa divertida practica y comenzo a usar numeraciones, lo que dio origen a Android 10.</p>
+                <p>Accese aqui al sitio <a href="https://www.britannica.com/technology/Android-operating-system#:~:text=Android%20began%20in%202003%20as,Google%20Inc.%2C%20in%202005." target="_blank" rel="noopener noreferrer" class="con_icono">Android History</a> para conocer la secuencia de las versiones "adocicadas" y lo que cada una trajo para el sistema Android.</p>
+            </div>
+        </section>
+        <div class="ultimo_contenedor_main">
+            <p>Entonces es eso! Espero que usted haya gustado de nuestro articulo con esa curiosidad sobre el sistema <a href="https://www.android.com/intl/es_es/" target="_blank" rel="noopener noreferrer">Android</a> y su simpatica mascota.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Sitio creado por <strong>Yeltsin Solorzano</strong> para su <strong>portafolio personal</strong></p>
+    </footer>
+</body>
+</html>

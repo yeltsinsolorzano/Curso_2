@@ -1,0 +1,13 @@
+h1 {
+    height: 300px;
+    width: 300px;
+    background-color: lightgreen;
+    border: 10px black solid;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+a {
+    border: 5px red solid;
+}

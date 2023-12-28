@@ -1,0 +1,313 @@
+/* AQUI IMPORTAMOS EL TIPO DE FUENTE */
+
+
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #84e1ad;
+}
+
+/* COMENZAMOS A TRABAJAR CON EL HEADER */
+
+header {
+    background-image: linear-gradient(#39cb79, #32B46C, #2B995B, #227747, #1A5C38);
+    padding: 15px 15px 5px 0;
+    box-shadow: 0 0 6px black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+header p {
+    color: rgb(206, 203, 203);
+    text-align: center;
+}
+
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+header li {
+    display: inline-block;
+    
+}
+
+header li.menu {
+    display: none;
+}
+
+header a {
+    transition: background-color 0.5s ease;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+header a:hover {
+    background-color: #39cb79;
+}
+
+/* TERMINAMOS DE TRABAJAR EN EL HEADER */
+
+/* COMENZAMOS A TRABAJAR EN EL MAIN */
+
+/* PARTE SUPERIOR DEL MAIN */
+
+main {
+    width: 60%;
+    background-color: white;
+    margin: auto;
+    padding: 20px 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.445);
+}
+
+main section.parte_superior_main {
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1A5C38;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+main a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: #32B46C;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: crimson;
+}
+
+main a.con_icono::after {
+    content: ' &';
+    color: rgb(118, 115, 115);
+}
+
+main h3 {
+    color: #1A5C38;
+    /* background-color: #84e1ad; */
+    background-image: linear-gradient(to right, #39cb782f, white);
+}
+
+img {
+    width: 100%;
+}
+/* TERMINAMOS CON LA PARTE SUPERIOR DEL MAIN */
+
+/* PARTE MEDIA DEL MAIN */
+
+main .parte_media_main {
+    width: 100%;
+    background-color: #1A5C38;
+}
+
+.video {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* TERMINAMOS CON LA PARTE MEDIA DEL MAIN */
+
+
+/* PARTE INFERIROR DEL MAIN */
+
+main .parte_inferior_main {
+    background-color: #C5EBD6;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 10px;
+    
+}
+
+.contenedor_superior {
+    background-color: #2FA866;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+.contenedor_superior p {
+    margin: 0;
+}
+
+.contenedor_inferior {
+    padding: 10px;
+}
+
+.parrafo_sin_margen {
+    margin-top: 0;
+}
+
+div .lista_uno {
+    float: left;
+    width: 40%;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+div .lista_dos {
+    float: right;
+    width: 30%;
+    margin: 0 160px 0 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+main ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p.clear {
+    clear: both;
+}
+
+.ultimo_contenedor_main {
+    padding: 0 20px;
+}
+
+/* COMENZAMOS A TRABAJAR CON EL FOOTER */
+
+footer {
+    background-color:  #1A5C38;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+/* COMENZAMOS A TRABAJAR EN EL RESPONSIVE */
+
+@media screen and (max-width: 1020px) {    
+
+    div .lista_uno {
+        width: 40%;
+    }
+   
+    div .lista_dos {
+        margin: 0 100px 0 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 920px) {    
+
+    div .lista_uno {
+        width: 40%;
+    }
+   
+    div .lista_dos {
+
+        margin: 0 60px 0 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 752px) {   
+    
+    main {
+        width: 80%;
+    }
+   
+    div .lista_dos {
+
+        margin: 0 40px 0 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 578px) {   
+    
+    main {
+        width: 90%;
+    }
+   
+    div .lista_dos {
+
+        margin: 0 20px 0 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 530px) {   
+    
+    header li.menu {
+        display: inline;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    nav ul:hover {
+        display: inline;
+    }
+
+
+}
+
+@media screen and (max-width: 505px) {   
+    
+    main {
+        width: 100%;
+    }
+
+    .contenedor_inferior {
+        padding: 20px 20px;
+    }
+   
+    div .lista_dos {
+
+        margin: 0 20px 0 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 478px) {   
+    
+    main {
+        width: 100%;
+    }
+
+    .contenedor_inferior {
+        padding: 20px 20px;
+    }
+   
+    div .lista_dos, div .lista_uno {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+    }
+}
